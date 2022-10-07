@@ -1,0 +1,10 @@
+db.sqlite3
+core/settings.py
+*.swp
+*.swo
+__pycache__/
+node_modules/
+django_static/
+dist/
+*.service
+virt

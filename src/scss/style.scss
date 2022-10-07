@@ -1,0 +1,29 @@
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'header.scss';
+@import 'nav.scss';
+@import 'head-contacts.scss';
+@import 'search.scss';
+
+@import 'icon.scss';
+@import 'btn.scss';
+@import 'link.scss';
+
+
+body {
+  color: $color-gray-olive;
+  margin: 0;
+  padding: 25px 160px;
+  font-family: 'inter';
+}
+button {
+  font-family: 'inter';
+}
+
+
+@media #{$mobile} {
+  body {
+    padding: 10px;
+  }
+}

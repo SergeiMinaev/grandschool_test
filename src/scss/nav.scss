@@ -1,0 +1,24 @@
+.nav {
+  & ul {
+    list-style: none;
+    @include flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    & li {
+      margin-right: 32px;
+      font-size: 18px;
+      line-height: 28px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  & a {
+    text-decoration: none;
+    color: $color-gray-olive;
+    &:hover {
+      color: $color-prim-dark;
+    }
+  }
+}

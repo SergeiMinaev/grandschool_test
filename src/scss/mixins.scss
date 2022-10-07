@@ -1,0 +1,39 @@
+@mixin noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin bg($url) {
+  background-image: url($url);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin mask-image($url) {
+  @supports not ((mask-image: url($url)) and (-webkit-mask-image: url($url))) {
+    background-image: url($url);
+  }
+  @supports (-webkit-mask-image: url($url)) and (not (mask-image: url($url))) {
+    -webkit-mask-image: url($url);
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    background-image: unset;
+  }
+  @supports (mask-image: url($url)) {
+    mask-image: url($url);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    background-image: unset;
+  }
+}

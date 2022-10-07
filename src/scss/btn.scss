@@ -1,0 +1,50 @@
+.btn {
+  border-width: 1px;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  align-items: center;
+  border-color: transparent;
+  border-radius: $border-rad-1;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  height: 46px;
+  @include flex;
+  @include noselect;
+  &:hover {
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.btn, .btn-primary {
+  padding: 0 32px;
+  background-color: $color-sec;
+  color: $color-prim;
+  &:hover {
+    color: $color-prim-dark;
+  }
+  &:active {
+    background-color: $color-gray-pale-3;
+  }
+  &__icon {
+    &:hover {
+      background-color: $color-prim-dark;
+    }
+  }
+}
+
+.btn-secondary {
+  padding: 0 24px 0 19px;
+  background-color: $color-sec;
+  & .icon--active {
+    background-color: $color-prim-dark;
+  }
+  &:hover {
+    color: $color-prim-dark;
+  }
+}

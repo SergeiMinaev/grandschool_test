@@ -1,0 +1,21 @@
+.link {
+  @include flex;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  height: 46px;
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+  &:hover {
+    color: $color-prim-dark;
+  }
+  & .icon--active {
+    background-color: $color-prim-dark;
+  }
+}

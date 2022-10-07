@@ -1,0 +1,12 @@
+.head-contacts {
+  @include flex;
+  gap: 30px;
+  &__link {
+    @include flex;
+  }
+  & .icon {
+    width: 18px;
+    height: 18px;
+    background-color: $color-gray-olive;
+  }
+}

@@ -1,0 +1,19 @@
+.icon {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  &--search {
+    @include mask-image('./assets/icon/24/Search.svg');
+  }
+  &--person {
+    @include mask-image('./assets/icon/20/Person.svg');
+  }
+  &--phone {
+    @include mask-image('./assets/icon/20/Phone.svg');
+  }
+  &--mail {
+    @include mask-image('./assets/icon/20/Mail.svg');
+  }
+}
