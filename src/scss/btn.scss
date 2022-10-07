@@ -6,7 +6,7 @@
   white-space: nowrap;
   align-items: center;
   border-color: transparent;
-  border-radius: $border-rad-1;
+  border-radius: 8px;
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
@@ -21,7 +21,7 @@
   }
 }
 
-.btn, .btn-primary {
+.btn-primary {
   padding: 0 32px;
   background-color: $color-sec;
   color: $color-prim;
@@ -46,5 +46,20 @@
   }
   &:hover {
     color: $color-prim-dark;
+  }
+}
+
+.btn-light {
+  padding: 0 24px 0 19px;
+  background-color: white;
+  color: $color-prim;
+  & .icon--active {
+    background-color: $color-prim-dark;
+  }
+  &:hover {
+    color: $color-prim-dark;
+  }
+  &:active {
+    color: $color-gray-olive;
   }
 }

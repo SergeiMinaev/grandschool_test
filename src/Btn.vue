@@ -1,6 +1,7 @@
 <template>
   <button class='btn' @mouseover='isActive=true' @mouseleave='isActive=false'>
-    <div :class='`btn__icon icon icon--${icon} icon--${isActive?"active":""}`'
+    <div v-if='icon'
+      :class='`btn__icon icon icon--${icon} icon--${isActive?"active":""}`'
     ></div>
     {{label}}
   </button>

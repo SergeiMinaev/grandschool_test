@@ -1,0 +1,31 @@
+.areas {
+  &__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+  }
+  &__items {
+    @include flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 16px;
+  }
+  &__item {
+    @include flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: calc(50% - 16px);
+    height: 96px;
+    background-color: $color-gray-pale-3;
+    border-radius: $border-rad-2;
+  }
+  &__item > span {
+    padding: 0 32px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &__btn {
+    margin-right: 18px;
+  }
+}

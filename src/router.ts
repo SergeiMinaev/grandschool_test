@@ -1,40 +1,40 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from './Home.vue';
+import About from './About.vue';
 
 
 const routes = [
   {
-    name: 'home', path: '/', component: Home, meta: { label: 'Главная' }
+    name: 'home', path: '/', component: About, meta: { label: 'Главная' }
   },
   {
-    name: 'about', path: '/about', component: Home, meta: { label: 'О нас' }
+    name: 'about', path: '/about', component: About, meta: { label: 'О&nbsp;нас' }
   },
   {
-    name: 'services', path: '/services', component: Home,
-    meta: { label: 'Юридические услуги' }
+    name: 'services', path: '/services', component: About,
+    meta: { label: 'Юридические&nbsp;услуги' }
   },
   {
-    name: 'webinars', path: '/webinars', component: Home,
+    name: 'webinars', path: '/webinars', component: About,
     meta: { label: 'Вебинары' }
   },
   {
-    name: 'courses', path: '/courses', component: Home,
+    name: 'courses', path: '/courses', component: About,
     meta: { label: 'Курсы' }
   },
   {
-    name: 'articles', path: '/articles', component: Home,
+    name: 'articles', path: '/articles', component: About,
     meta: { label: 'Статьи' }
   },
   {
-    name: 'partner', path: '/partner', component: Home,
+    name: 'partner', path: '/partner', component: About,
     meta: { label: 'Партнёрство' }
   },
   {
-    name: 'news', path: '/news', component: Home,
+    name: 'news', path: '/news', component: About,
     meta: { label: 'Новости' }
   },
   {
-    name: 'sdo', path: '/sdo', component: Home,
+    name: 'sdo', path: '/sdo', component: About,
     meta: { label: 'СДО' }
   },
 ]

@@ -1,7 +1,7 @@
 <template>
   <header class='header'>
     <div class='header__row-1'>
-      <div class='header__logo'></div>
+      <router-link to='/'><div class='header__logo'></div></router-link>
       <Search />
       <div class='header__btns'>
         <Btn class='header__btn btn-secondary'
@@ -54,7 +54,6 @@ export default defineComponent({
     }
   },
   created() {
-    console.log('hi');
   }
 })
 </script>

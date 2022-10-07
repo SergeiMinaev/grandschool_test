@@ -1,0 +1,16 @@
+.about-docs {
+  width: 100%;
+  gap: 32px;
+  &__item {
+    @include flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: $color-gray-pale-3;
+    & > span {
+      color: $color-prim;
+      line-height: 28px;
+      font-weight: 600;
+    }
+  }
+}

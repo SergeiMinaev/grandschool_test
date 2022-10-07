@@ -4,9 +4,7 @@
       <template v-for='route in $router.options.routes'>
         <li v-if='route && route.meta && route.name != "home"'
           v-bind:key='route.name'>
-          <router-link :to='route.path'>
-            {{ route.meta.label }}
-          </router-link>
+          <router-link :to='route.path' v-html='route.meta.label'></router-link>
         </li>
       </template>
     </ul>
