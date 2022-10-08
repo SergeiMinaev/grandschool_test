@@ -17,4 +17,12 @@
     grid-area: docs;
     @include flex;
   }
+  &__docs-support {
+    @include flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    & > div {
+      width: calc(50% - 60px);
+    }
+  }
 }

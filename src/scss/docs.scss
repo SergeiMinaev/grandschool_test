@@ -1,0 +1,12 @@
+.docs {
+  &__title {
+    margin-bottom: 36px;
+  }
+  &__item {
+    display: block;
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

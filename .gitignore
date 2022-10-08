@@ -8,3 +8,4 @@ django_static/
 dist/
 *.service
 virt
+local/

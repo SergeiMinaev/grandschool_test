@@ -1,0 +1,16 @@
+.supported-by {
+  &__title {
+    margin-bottom: 36px;
+  }
+  &__items {
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__item {
+    margin-bottom: 64px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

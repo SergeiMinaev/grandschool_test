@@ -37,6 +37,12 @@
     <Team title='Наша команда' :items='team' />
 
     <Partners />
+
+    <div class='about__docs-support'>
+      <Docs />
+      <SupportedBy />
+    </div>
+
   </div>
 </template>
 
@@ -48,6 +54,8 @@ import Activity from './Activity.vue';
 import OnlineForm from './OnlineForm.vue';
 import Partners from './Partners.vue';
 import Team from './Team.vue';
+import Docs from './Docs.vue';
+import SupportedBy from './SupportedBy.vue';
 
 
 export default defineComponent({
@@ -57,6 +65,8 @@ export default defineComponent({
     'Activity': Activity,
     'Partners': Partners,
     'Team': Team,
+    'Docs': Docs,
+    'SupportedBy': SupportedBy,
   },
   props: [],
   data() {

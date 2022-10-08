@@ -1,9 +1,13 @@
 .partners {
+  margin-bottom: 100px;
   &__head {
     @include flex;
     justify-content: space-between;
     align-items: baseline;
   }
   &__title {
+  }
+  &__carousel {
+    height: 100px;
   }
 }
