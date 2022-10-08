@@ -21,11 +21,11 @@
           <div class='coop-card__link text-btn'>Онлайн&nbsp;заявка&nbsp;→</div>
         </div>
         <div class='coop__card coop-card'>
-          <img class='coop-card__img' src='./assets/img/call-us.jpg' />
+          <img class='coop-card__img' src='/static/img/call-us.jpg' />
           <div class='coop-card__link text-btn'>Звонок&nbsp;нам&nbsp;→</div>
         </div>
         <div class='coop__card coop-card'>
-          <img class='coop-card__img' src='./assets/img/office.jpg' />
+          <img class='coop-card__img' src='/static/img/office.jpg' />
           <div class='coop-card__link text-btn'>Посещение&nbsp;офиса&nbsp;→</div>
         </div>
       </div>
@@ -48,10 +48,6 @@ import Activity from './Activity.vue';
 import OnlineForm from './OnlineForm.vue';
 import Partners from './Partners.vue';
 import Team from './Team.vue';
-//@ts-ignore
-import thumb1 from './assets/img/doc-1.thumb.png'
-//@ts-ignore
-import thumb2 from './assets/img/doc-2.thumb.png'
 
 
 export default defineComponent({
@@ -78,8 +74,11 @@ export default defineComponent({
         <p>Обучаясь в «Grand School» вы приобретаете реальный опыт,
         который поможет преуспеть в работе и бизнесе.</p>`,
       docs: [
-        { thumb: thumb1, 'label': 'Лицензия в полном размере' },
-        { thumb: thumb2, 'label': 'Соглашение с МУМЦФМ' },
+        { thumb: '/static/img/doc-1.thumb.png',
+          label: 'Лицензия в полном размере' },
+        { thumb: '/static/img/doc-2.thumb.png',
+          label: 'Соглашение с МУМЦФМ'
+        },
       ],
       areas: [
         { label: 'Дистанционное&nbsp;обучение' },
@@ -107,7 +106,7 @@ export default defineComponent({
         },
       ],
       team: [
-        { img: './src/assets/img/Avatar-1.jpg',
+        { img: '/static/img/Avatar-1.jpg',
           name: 'Ирина',
           surname: 'Тумашова',
           position: 'Руководитель отдела консалтинга',
@@ -115,7 +114,7 @@ export default defineComponent({
           phone: '8 800 333-15-43',
           phoneMod: '478',
         },
-        { img: './src/assets/img/Avatar-2.jpg',
+        { img: '/static/img/Avatar-2.jpg',
           name: 'Владимир',
           surname: 'Сущенко',
           position: 'Менеджер по работе с клиентами отдела консалтинга',
@@ -123,7 +122,7 @@ export default defineComponent({
           phone: '8 800 333-15-43',
           phoneMod: '477',
         },
-        { img: './src/assets/img/Avatar-3.jpg',
+        { img: '/static/img/Avatar-3.jpg',
           name: 'Максим',
           surname: 'Юнчис',
           position: 'Менеджер проектов отдела консалтинга',
@@ -131,7 +130,7 @@ export default defineComponent({
           phone: '8 800 333-15-43',
           phoneMod: '475',
         },
-        { img: './src/assets/img/Avatar-4.jpg',
+        { img: '/static/img/Avatar-4.jpg',
           name: 'Татьяна',
           surname: 'Долина',
           position: 'Ведущий юрист отдела консалтинга',
@@ -139,7 +138,7 @@ export default defineComponent({
           phone: '8 800 333-15-43',
           phoneMod: '479',
         },
-        { img: './src/assets/img/Avatar-5.jpg',
+        { img: '/static/img/Avatar-5.jpg',
           name: 'Олеся',
           surname: 'Михальцова',
           position: 'Юрист отдела консалтинга',
@@ -147,7 +146,7 @@ export default defineComponent({
           phone: '8 800 333-15-43',
           phoneMod: '476',
         },
-        { img: './src/assets/img/Avatar-6.jpg',
+        { img: '/static/img/Avatar-6.jpg',
           name: 'Ульяна',
           surname: 'Ванеева',
           position: 'Директор ЧОУ ДПО «Гранд Скул»',

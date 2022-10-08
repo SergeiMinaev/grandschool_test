@@ -49,7 +49,7 @@ export default defineComponent({
       if (this.items.length == this.loadedImgs) this.initCarousel();
     },
     initCarousel() {
-      //const line = document.getElementsByClassName('carousel__orig')[0];
+      // @ts-ignore
       this.origDelay = this.duration / (this.$refs.orig.offsetWidth / (window.screen.width / 2)) * -1;
       this.isReady = true;
     },

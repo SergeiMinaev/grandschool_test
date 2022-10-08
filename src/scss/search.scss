@@ -7,7 +7,7 @@
   box-sizing: border-box;
   padding: 9px 9px 9px 12px;
   &__btn {
-    @include bg('./assets/icon/24/Search.svg');
+    @include bg('/static/icon/24/Search.svg');
     width: 24px;
     height: 24px;
   }

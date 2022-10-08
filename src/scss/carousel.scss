@@ -18,12 +18,6 @@
   width: 100%;
   height: 100px;
   overflow: hidden;
-  &__head {
-    @include flex;
-    justify-content: space-between;
-  }
-  &__title {
-  }
   &__orig, &__shadow {
     display: flex;
     flex-direction: row;

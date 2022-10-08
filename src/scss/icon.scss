@@ -5,30 +5,30 @@
   background-size: contain;
   background-repeat: no-repeat;
   &--search {
-    @include mask-image('./assets/icon/24/Search.svg');
+    @include mask-image('/static/icon/24/Search.svg');
   }
   &--person {
-    @include mask-image('./assets/icon/20/Person.svg');
+    @include mask-image('/static/icon/20/Person.svg');
   }
   &--phone {
-    @include mask-image('./assets/icon/20/Phone.svg');
+    @include mask-image('/static/icon/20/Phone.svg');
   }
   &--mail {
-    @include mask-image('./assets/icon/20/Mail.svg');
+    @include mask-image('/static/icon/20/Mail.svg');
   }
   &--tg {
-    @include mask-image('./assets/icon/48/TG.svg');
+    @include mask-image('/static/icon/48/TG.svg');
   }
   &--vk {
-    @include mask-image('./assets/icon/48/VK.svg');
+    @include mask-image('/static/icon/48/VK.svg');
   }
   &--yt {
-    @include mask-image('./assets/icon/48/YT.svg');
+    @include mask-image('/static/icon/48/YT.svg');
   }
   &--zen {
-    @include mask-image('./assets/icon/48/Zen.svg');
+    @include mask-image('/static/icon/48/Zen.svg');
   }
   &--grand {
-    @include mask-image('./assets/icon/48/Grand.svg');
+    @include mask-image('/static/icon/48/Grand.svg');
   }
 }
