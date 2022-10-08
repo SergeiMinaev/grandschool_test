@@ -8,9 +8,13 @@
 @import 'about.scss';
 @import 'about-docs.scss';
 @import 'areas.scss';
+@import 'coop.scss';
+@import 'coop-card.scss';
+@import 'online-form.scss';
 
 @import 'icon.scss';
 @import 'btn.scss';
+@import 'text-btn.scss';
 @import 'link.scss';
 
 
@@ -24,7 +28,13 @@ body {
 button {
   font-family: 'inter';
 }
-
+input {
+  border-width: 0;
+  padding: 8px 10px;
+  &:focus {
+    outline: solid 0 transparent;
+  }
+}
 
 @media #{$mobile} {
   body {

@@ -1,0 +1,16 @@
+.coop {
+  &__title {
+  }
+  &__cards {
+    @include flex;
+    align-items: stretch;
+    gap: 23px;
+  }
+  &__card {
+    width: 33.3%;
+    @include flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}

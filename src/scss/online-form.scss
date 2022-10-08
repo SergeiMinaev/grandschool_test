@@ -1,0 +1,26 @@
+.online-form {
+  @include flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  &__title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__row {
+    @include flex;
+    height: 60px;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+  &__input {
+    border: 1px solid $color-gray-pale;
+    border-radius: 8px;
+  }
+  & input {
+  }
+  &__btn {
+    width: 100%;
+  }
+}
