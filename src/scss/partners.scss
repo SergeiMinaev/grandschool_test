@@ -1,0 +1,9 @@
+.partners {
+  &__head {
+    @include flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__title {
+  }
+}

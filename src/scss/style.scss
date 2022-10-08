@@ -1,6 +1,9 @@
 @import 'fonts.scss';
 @import 'variables.scss';
 @import 'mixins.scss';
+@import 'icon.scss';
+@import 'btn.scss';
+
 @import 'header.scss';
 @import 'nav.scss';
 @import 'head-contacts.scss';
@@ -8,12 +11,15 @@
 @import 'about.scss';
 @import 'about-docs.scss';
 @import 'areas.scss';
+@import 'activity.scss';
 @import 'coop.scss';
 @import 'coop-card.scss';
 @import 'online-form.scss';
+@import 'team.scss';
+@import 'team-card.scss';
+@import 'carousel.scss';
+@import 'partners.scss';
 
-@import 'icon.scss';
-@import 'btn.scss';
 @import 'text-btn.scss';
 @import 'link.scss';
 
@@ -34,6 +40,11 @@ input {
   &:focus {
     outline: solid 0 transparent;
   }
+}
+h2 {
+  font-size: 36px;
+  line-height: 46px;
+  margin: 0 0 32px 0;
 }
 
 @media #{$mobile} {

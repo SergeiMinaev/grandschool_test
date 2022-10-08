@@ -11,15 +11,7 @@
       </div>
     </div>
 
-    <div class='areas'>
-      <h2 class='areas__title'>Направления деятельности</h2>
-      <div class='areas__items'>
-        <div class='areas__item' v-for='item in areas'>
-          <span v-html='item.label'></span>
-          <Btn class='areas__btn btn-light' label='Подробнее' />
-        </div>
-      </div>
-    </div>
+    <Activity title='Направления деятельности' :items='areas' label='Подробнее' /> 
 
     <div class='coop'>
       <h2 class='coop__title'>Сотрудничаем любым способом</h2>
@@ -39,15 +31,12 @@
       </div>
     </div>
 
-    <div class='areas'>
-      <h2 class='areas__title'>Наши ресурсы</h2>
-      <div class='areas__items'>
-        <div class='areas__item' v-for='item in resources'>
-          <span v-html='item.label'></span>
-          <Btn class='areas__btn btn-light' label='Подробнее' />
-        </div>
-      </div>
-    </div>
+
+    <Activity title='Наши ресурсы' :items='resources' label='Открыть' /> 
+
+    <Team title='Наша команда' :items='team' />
+
+    <Partners />
   </div>
 </template>
 
@@ -55,7 +44,10 @@
 <script lang='ts'>
 import { defineComponent } from 'vue';
 import Btn from './Btn.vue';
+import Activity from './Activity.vue';
 import OnlineForm from './OnlineForm.vue';
+import Partners from './Partners.vue';
+import Team from './Team.vue';
 //@ts-ignore
 import thumb1 from './assets/img/doc-1.thumb.png'
 //@ts-ignore
@@ -66,6 +58,9 @@ export default defineComponent({
   components: {
     'Btn': Btn,
     'OnlineForm': OnlineForm,
+    'Activity': Activity,
+    'Partners': Partners,
+    'Team': Team,
   },
   props: [],
   data() {
@@ -95,7 +90,7 @@ export default defineComponent({
         { label: 'Лицензирование' },
       ],
       resources: [
-        { icon: 'telegram', label: 'Telegram',
+        { icon: 'tg', label: 'Telegram',
           link: 'https://t.me/grschool'
         },
         { icon: 'vk', label: 'ВКонтакте', 
@@ -109,6 +104,56 @@ export default defineComponent({
         },
         { icon: 'yt', label: 'YouTube',
           link: 'https://www.youtube.com/channel/UCoCr94xh_Pi-zHr1m0EdbAA'
+        },
+      ],
+      team: [
+        { img: './src/assets/img/Avatar-1.jpg',
+          name: 'Ирина',
+          surname: 'Тумашова',
+          position: 'Руководитель отдела консалтинга',
+          email: 'i.kolesova@grandschool.net',
+          phone: '8 800 333-15-43',
+          phoneMod: '478',
+        },
+        { img: './src/assets/img/Avatar-2.jpg',
+          name: 'Владимир',
+          surname: 'Сущенко',
+          position: 'Менеджер по работе с клиентами отдела консалтинга',
+          email: 'v.sushchenko@grandschool.net',
+          phone: '8 800 333-15-43',
+          phoneMod: '477',
+        },
+        { img: './src/assets/img/Avatar-3.jpg',
+          name: 'Максим',
+          surname: 'Юнчис',
+          position: 'Менеджер проектов отдела консалтинга',
+          email: 'm.yunchis@grandschool.net',
+          phone: '8 800 333-15-43',
+          phoneMod: '475',
+        },
+        { img: './src/assets/img/Avatar-4.jpg',
+          name: 'Татьяна',
+          surname: 'Долина',
+          position: 'Ведущий юрист отдела консалтинга',
+          email: 't.dolina@grandschool.net',
+          phone: '8 800 333-15-43',
+          phoneMod: '479',
+        },
+        { img: './src/assets/img/Avatar-5.jpg',
+          name: 'Олеся',
+          surname: 'Михальцова',
+          position: 'Юрист отдела консалтинга',
+          email: 'o.mikhaltsova@grandschool.net',
+          phone: '8 800 333-15-43',
+          phoneMod: '476',
+        },
+        { img: './src/assets/img/Avatar-6.jpg',
+          name: 'Ульяна',
+          surname: 'Ванеева',
+          position: 'Директор ЧОУ ДПО «Гранд Скул»',
+          email: '...',
+          phone: '8 800 333-15-43',
+          phoneMod: '475',
         },
       ],
     }

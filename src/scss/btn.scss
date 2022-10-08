@@ -41,7 +41,8 @@
 .btn-secondary {
   padding: 0 24px 0 19px;
   background-color: $color-sec;
-  & .icon--active {
+  color: $color-prim;
+  & .icon.icon--active {
     background-color: $color-prim-dark;
   }
   &:hover {
@@ -53,7 +54,7 @@
   padding: 0 24px 0 19px;
   background-color: white;
   color: $color-prim;
-  & .icon--active {
+  & .icon.icon--active {
     background-color: $color-prim-dark;
   }
   &:hover {

@@ -16,4 +16,19 @@
   &--mail {
     @include mask-image('./assets/icon/20/Mail.svg');
   }
+  &--tg {
+    @include mask-image('./assets/icon/48/TG.svg');
+  }
+  &--vk {
+    @include mask-image('./assets/icon/48/VK.svg');
+  }
+  &--yt {
+    @include mask-image('./assets/icon/48/YT.svg');
+  }
+  &--zen {
+    @include mask-image('./assets/icon/48/Zen.svg');
+  }
+  &--grand {
+    @include mask-image('./assets/icon/48/Grand.svg');
+  }
 }

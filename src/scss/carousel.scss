@@ -1,0 +1,58 @@
+@keyframes carousel {
+  0% {
+    transform: translate(100%, 0);
+  }
+  50% {
+    transform: translate(0%, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.carousel {
+  @include flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  &__head {
+    @include flex;
+    justify-content: space-between;
+  }
+  &__title {
+  }
+  &__orig, &__shadow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    //animation-name: carousel;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+  &__shadow {
+    transform: translate(-100%, 0);
+    //background-color: red;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+  &__item {
+    width: auto;
+    height: 100px;
+    margin: 32px;
+  }
+  &__item img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+  }
+}

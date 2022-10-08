@@ -1,0 +1,11 @@
+.team {
+  &__items {
+    @include flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  &__card {
+    width: calc(25% - 25px);
+  }
+}
