@@ -3,6 +3,7 @@
     <div class='header__row-1'>
       <router-link to='/'><div class='header__logo'></div></router-link>
       <Search />
+      <Navbar class='header__nav-1' />
       <div class='header__btns'>
         <Btn class='header__btn btn-secondary'
           icon='person' label='Регистрация и вход'
@@ -13,7 +14,7 @@
       </div>
     </div>
     <div class='header__row-2'>
-      <Navbar />
+      <Navbar class='header__nav-2' />
       <div class='head-contacts'>
         <Link class='head-contacts__link'
           icon='mail' label='info@grandschool.net'

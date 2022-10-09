@@ -9,3 +9,19 @@
     width: calc(25% - 25px);
   }
 }
+
+@media #{$laptop} {
+  .team {
+    &__card {
+      width: calc(50% - 25px);
+    }
+  }
+}
+
+@media #{$mobile} {
+  .team {
+    &__card {
+      width: 100%;
+    }
+  }
+}

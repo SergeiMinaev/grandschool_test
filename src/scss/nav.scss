@@ -1,5 +1,6 @@
 .nav {
-  & ul {
+  &__burger { display: none; }
+  &__list {
     list-style: none;
     @include flex;
     justify-content: flex-start;
@@ -7,8 +8,6 @@
     padding: 0;
     & li {
       margin-right: 32px;
-      font-size: 18px;
-      line-height: 28px;
       &:last-child {
       }
     }
@@ -18,6 +17,49 @@
     color: $color-gray-olive;
     &:hover {
       color: $color-prim-dark;
+    }
+  }
+}
+
+@media #{$laptop} {
+  .nav {
+    &__burger {
+      @include flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      position: relative;
+    }
+    &__burger-line {
+      width: 100%;
+      height: 5px;
+      background-color: $color-prim;
+    }
+    &__list {
+      flex-direction: column;
+      display: none;
+      position: fixed;
+      top: 0; left: 0; bottom: 0; right: 0;
+      z-index: 10;
+      background-color: white;
+      padding: 32px;
+      &--vis {
+        display: flex;
+      }
+      & li {
+        padding: 10px 0;
+        margin: 0;
+      }
+    }
+    &__close {
+      cursor: pointer;
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      font-size: 40px;
+      color: $color-gray-pale;
     }
   }
 }

@@ -1,8 +1,5 @@
 .activity {
   &__title {
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 46px;
   }
   &__items {
     @include flex;
@@ -16,17 +13,12 @@
     flex-shrink: 0;
     width: calc(50% - 76px);
     height: 96px;
-    padding: 0 30px;
+    padding: 0 16px 0 30px;
     background-color: $color-gray-pale-3;
     border-radius: $border-rad-2;
   }
-  &__item > span {
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
-  }
   &__btn {
-    margin-right: 18px;
+    //margin-right: 18px;
     @include flex;
     height: 60px;
     padding: 0 30px;
@@ -42,5 +34,48 @@
   }
   &__label {
     @include flex;
+  }
+}
+
+@media #{$desktop-m} {
+  .activity {
+  }
+}
+
+@media #{$laptop} {
+  .activity {
+    &__items {
+      flex-direction: column;
+    }
+    &__item {
+      width: calc(100% - 60px);
+    }
+  }
+}
+
+@media #{$mobile} {
+  .activity {
+    &__item {
+      width: calc(100% - 32px);
+      height: 60px;
+      padding: 0 16px;
+      & h3 {
+        font-size: 14px;
+      }
+    }
+    &__btn {
+      height: 40px;
+      padding: 0 10px;
+    }
+    &__label {
+      justify-content: flex-start;
+      max-width: calc(100% - 120px);
+      & h3 {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
   }
 }

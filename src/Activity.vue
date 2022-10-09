@@ -7,7 +7,7 @@
           <div v-if='item.icon'
             :class='`activity__icon icon icon--${item.icon}`'
           ></div>
-          <span v-html='item.label'></span>
+          <h3 v-html='item.label'></h3>
         </div>
         <a :href='item.link' class='activity__btn btn btn-light'>
           {{ label }}

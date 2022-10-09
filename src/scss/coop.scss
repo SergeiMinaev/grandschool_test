@@ -14,3 +14,14 @@
     align-items: flex-start;
   }
 }
+
+@media #{$laptop} {
+  .coop {
+    &__cards {
+      flex-direction: column;
+    }
+    &__card {
+      width: 100%;
+    }
+  }
+}

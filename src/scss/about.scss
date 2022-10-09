@@ -5,13 +5,9 @@
   grid-column-gap: 64px;
   &__title {
     grid-area: title;
-    font-weight: 800;
-    font-size: 64px;
   }
   &__descr {
     grid-area: descr;
-    font-size: 22px;
-    line-height: 36px;
   }
   &__docs {
     grid-area: docs;
@@ -24,6 +20,24 @@
     margin-bottom: 80px;
     & > div {
       width: calc(50% - 60px);
+    }
+  }
+}
+
+@media #{$desktop-m} {
+  .about {
+    grid-column-gap: 50px;
+  }
+}
+
+@media #{$laptop} {
+  .about {
+    grid-template-areas: 'title' 'descr' 'docs';
+    &__docs-support {
+      flex-direction: column;
+      & > div {
+        width: 100%;
+      }
     }
   }
 }

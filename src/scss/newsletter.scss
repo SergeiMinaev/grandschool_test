@@ -25,3 +25,15 @@
     scrollbar-width: none; /* firefox */
   }
 }
+
+@media #{$laptop} {
+  .newsletter {
+    flex-direction: column;
+    &__form, &__items {
+      width: 100%;
+    }
+    &__items {
+      max-height: 235px;
+    }
+  }
+}

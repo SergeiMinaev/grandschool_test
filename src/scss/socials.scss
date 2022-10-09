@@ -16,3 +16,30 @@
     background-color: $color-prim;
   }
 }
+
+@media #{$desktop-m} {
+  .socials {
+    flex-wrap: wrap;
+    width: 160px;
+    &__item {
+      margin: 10px;
+      &:last-child {
+        margin: 10px;
+      }
+    }
+  }
+}
+
+@media #{$laptop} {
+  .socials {
+    width: 100%;
+    justify-content: flex-start;
+    &__item {
+      margin: 16px;
+      margin-left: 0;
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

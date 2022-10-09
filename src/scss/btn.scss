@@ -8,8 +8,6 @@
   border-color: transparent;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
   height: 46px;
   @include flex;
   @include noselect;
@@ -62,5 +60,10 @@
   }
   &:active {
     color: $color-gray-olive;
+  }
+}
+
+@media #{$desktop-m} {
+  .btn {
   }
 }

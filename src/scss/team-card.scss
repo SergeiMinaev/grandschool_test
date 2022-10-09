@@ -19,5 +19,29 @@
   }
   &__img {
     border-radius: 16px;
+    margin-bottom: 16px;
+  }
+  &__name {
+    margin-bottom: 16px;
+  }
+  &__email {
+    margin-bottom: 16px;
+  }
+  &__position {
+    color: $color-gray-pale;
+    //margin-bottom: 64px;
+  }
+  &__contacts {
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media #{$mobile} {
+  .team-card {
+    &__bg {
+      height: 320px;
+    }
   }
 }

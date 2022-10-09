@@ -10,3 +10,12 @@
     background-color: $color-gray-olive;
   }
 }
+
+@media #{$mobile} {
+  .head-contacts {
+    gap: 10px;
+    //width: 100%;
+    //flex-direction: column;
+    //align-items: flex-start;
+  }
+}

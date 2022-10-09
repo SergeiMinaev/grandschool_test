@@ -24,3 +24,12 @@
     width: 100%;
   }
 }
+
+@media #{$desktop-m} {
+  .online-form {
+    &__title {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+}

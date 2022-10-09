@@ -4,21 +4,28 @@
   text-align: center;
   white-space: nowrap;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  height: 46px;
+  //height: 46px;
   text-decoration: none;
   color: $color-gray-olive;
   &__icon {
     width: 20px;
     height: 20px;
     margin-right: 8px;
+    background-color: $color-gray-olive;
   }
   &:hover {
-    color: $color-prim-dark;
+    //color: $color-prim-dark;
     text-decoration: underline;
   }
   & .icon--active {
-    background-color: $color-prim-dark;
+    //background-color: $color-prim-dark;
+  }
+}
+
+@media #{$mobile} {
+  .link {
+    &__icon {
+      margin-right: 4px;
+    }
   }
 }

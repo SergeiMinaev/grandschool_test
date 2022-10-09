@@ -1,7 +1,13 @@
 .text-btn {
   color: $color-prim;
   cursor: pointer;
-  font-size: 18px;
-  line-height: 28px;
   font-weight: 600;
+  &:hover {
+    color: $color-prim-dark;
+  }
+}
+
+@media #{$desktop-m} {
+  .text-btn {
+  }
 }

@@ -4,7 +4,7 @@
   margin-top: 80px;
   margin-bottom: 85px;
   &__contacts, &__socials, &__addr, &__docs {
-    width: calc(25% - 16px);
+    width: calc(25% - 25px);
   }
   &__contacts, &__addr {
     @include flex;
@@ -31,6 +31,35 @@
     & > span {
       font-size: 18px;
       line-height: 28px;
+    }
+  }
+}
+
+@media #{$desktop-m} {
+  .footer {
+    &__socials {
+      @include flex;
+    }
+    &__link {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+}
+
+@media #{$laptop} {
+  .footer {
+    flex-wrap: wrap;
+    &__contacts, &__socials, &__addr, &__docs {
+      width: calc(50% - 25px);
+    }
+  }
+}
+
+@media #{$mobile} {
+  .footer {
+    &__contacts, &__socials, &__addr, &__docs {
+      width: 100%;
     }
   }
 }
