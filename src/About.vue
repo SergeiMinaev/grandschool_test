@@ -43,6 +43,8 @@
       <SupportedBy />
     </div>
 
+    <Newsletter />
+
   </div>
 </template>
 
@@ -56,6 +58,7 @@ import Partners from './Partners.vue';
 import Team from './Team.vue';
 import Docs from './Docs.vue';
 import SupportedBy from './SupportedBy.vue';
+import Newsletter from './Newsletter.vue';
 
 
 export default defineComponent({
@@ -67,6 +70,7 @@ export default defineComponent({
     'Team': Team,
     'Docs': Docs,
     'SupportedBy': SupportedBy,
+    'Newsletter': Newsletter,
   },
   props: [],
   data() {

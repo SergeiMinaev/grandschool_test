@@ -21,6 +21,7 @@
     @include flex;
     align-items: flex-start;
     justify-content: space-between;
+    margin-bottom: 80px;
     & > div {
       width: calc(50% - 60px);
     }

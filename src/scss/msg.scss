@@ -1,0 +1,33 @@
+.msg {
+  display: grid;
+  grid-template-areas: 'main';
+  position: relative;
+  padding-bottom: 28px;
+  &:first-child {
+    padding-bottom: 0;
+  }
+  &__msg-box, &__tail {
+    grid-area: main;
+  }
+  &__msg-box {
+    display: flex;
+    margin-left: 12px;
+    font-size: 30px;
+    line-height: 46px;
+    font-weight: 400;
+  }
+  &__msg {
+    background-color: $color-prim;
+    color: white;
+    padding: 21px 28px;
+    border-radius: 42px;
+  }
+  &__tail {
+    width: 32px;
+    height: 33px;
+    @include bg('/static/icon/tail.svg');
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
