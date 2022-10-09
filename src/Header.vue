@@ -38,7 +38,6 @@ import Navbar from './Navbar.vue';
 
 
 interface IData {
-  a: string;
 }
 
 
@@ -51,7 +50,6 @@ export default defineComponent({
   },
   data(): IData {
     return {
-      a: 'q',
     }
   },
   created() {

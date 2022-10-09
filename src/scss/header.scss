@@ -1,4 +1,5 @@
 .header {
+  margin-bottom: 86px;
   &__row-1 {
     display: grid;
     grid-template-areas: 'logo search btns';
@@ -42,7 +43,7 @@
       gap: 10px;
     }
     &__row-2 {
-      flex-direction: row-reverse;
+      flex-direction: row;
     }
     &__btns {
       flex-direction: column;
@@ -56,8 +57,12 @@
 
 @media #{$mobile} {
   .header {
+    margin-bottom: 32px;
     &__row-1 {
       grid-template-areas: 'logo nav' 'search search' 'btns btns';
+    }
+    &__row-2 {
+      margin-top: 8px;
     }
     &__nav-1 {
       display: flex;
