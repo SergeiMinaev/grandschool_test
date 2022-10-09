@@ -1,5 +1,5 @@
 <template>
-  <a class='link' @mouseover='isActive=true' @mouseleave='isActive=false'>
+  <a class='link' @mouseover='isActive=true' @mouseleave='isActive=false' :href='url'>
     <div :class='`link__icon icon icon--${icon} icon--${isActive?"active":""}`'
     ></div>
     {{label}}
