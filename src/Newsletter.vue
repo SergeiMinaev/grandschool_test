@@ -31,6 +31,7 @@
 <script lang='ts'>
 import { defineComponent } from 'vue';
 import Btn from './Btn.vue';
+import { newsletter } from './data.ts';
 
 
 export default defineComponent({
@@ -40,11 +41,7 @@ export default defineComponent({
   props: [],
   data() {
     return {
-      items: [
-        { text: 'Скидка 10% на ПВК' },
-        { text: '14 июля вступила в силу новая (93-я) редакция Федерального закона N 115-ФЗ' },
-        { text: 'Новый курс для бухгалтеров ломбарда' },
-      ],
+      items: newsletter,
     }
   }
 })

@@ -10,18 +10,14 @@
 
 <script lang='ts'>
 import { defineComponent } from 'vue';
+import { supportedBy } from './data.ts';
 
 
 export default defineComponent({
   props: [],
   data() {
     return {
-      items: [
-        { img: '/static/img/partners/RFBank.png' },
-        { img: '/static/img/partners/Sci.png' },
-        { img: '/static/img/partners/Rosfin.png' },
-        { img: '/static/img/partners/MUMCFM.png' },
-      ]
+      items: supportedBy,
     }
   }
 })
