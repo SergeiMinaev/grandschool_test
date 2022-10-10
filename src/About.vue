@@ -61,7 +61,7 @@ import Team from './Team.vue';
 import Docs from './Docs.vue';
 import SupportedBy from './SupportedBy.vue';
 import Newsletter from './Newsletter.vue';
-import { aboutText, aboutDocs, docList, areas, resources, team } from './data.ts';
+import { aboutText, aboutDocs, docList, areas, resources, team } from './data.js';
 
 
 export default defineComponent({

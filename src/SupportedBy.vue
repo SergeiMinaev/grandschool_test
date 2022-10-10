@@ -10,7 +10,7 @@
 
 <script lang='ts'>
 import { defineComponent } from 'vue';
-import { supportedBy } from './data.ts';
+import { supportedBy } from './data.js';
 
 
 export default defineComponent({

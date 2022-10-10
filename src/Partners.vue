@@ -15,7 +15,7 @@
 <script lang='ts'>
 import { defineComponent } from 'vue';
 import Carousel from './Carousel.vue';
-import { partners } from './data.ts';
+import { partners } from './data.js';
 
 
 export default defineComponent({

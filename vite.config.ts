@@ -22,9 +22,13 @@ export default defineConfig({
   server: {
     port: 8000,
     hmr: true,
+    open: true,
   },
   build: {
     outDir: 'dist',
     assetsDir: 'static',
+  },
+  preview: {
+    open: true,
   },
 })

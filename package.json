@@ -2,9 +2,8 @@
   "name": "Grand School Test",
   "scripts": {
     "dev": "vite",
-    "build_": "vue-tsc && vite build --mode production",
-    "build": "vite build --mode production",
-    "preview": "vite preview --port 8000"
+    "build": "vue-tsc && vite build --mode production",
+    "preview": "vite build --mode production && vite preview --port 8000"
   },
   "dependencies": {
     "vue": "^3.2.36",

@@ -31,7 +31,7 @@
 <script lang='ts'>
 import { defineComponent } from 'vue';
 import Btn from './Btn.vue';
-import { newsletter } from './data.ts';
+import { newsletter } from './data.js';
 
 
 export default defineComponent({
