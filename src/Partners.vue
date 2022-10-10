@@ -2,11 +2,12 @@
   <div class='partners'>
     <div class='partners__head'>
       <h2 class='partners__title'>С нами работают</h2>
-      <span class='text-btn'>Стать партнёром&nbsp;→</span>
+      <span class='partners__btn-desk text-btn'>Стать партнёром&nbsp;→</span>
     </div>
     <div class='partners__carousel'>
       <Carousel :items='partners' />
     </div>
+    <span class='partners__btn-mob text-btn'>Стать партнёром&nbsp;→</span>
   </div>
 </template>
 

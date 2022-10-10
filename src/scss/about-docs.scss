@@ -1,10 +1,9 @@
 .about-docs {
   width: 100%;
-  gap: 32px;
+  gap: $space-x3;
   &__item {
     @include flex;
     flex-direction: column;
-    //width: 50%;
     height: 100%;
     background-color: $color-gray-pale-3;
     & > span {
@@ -13,13 +12,16 @@
     }
   }
   &__item img {
-    padding: 32px;
+    padding: $space-x3;
+  }
+  &__item a {
+    text-decoration: none;
   }
 }
 
 @media #{$desktop-m} {
   .about-docs {
-    gap: 16px;
+    gap: $space-x2;
     &__item img {
       padding: 22px;
     }
@@ -30,5 +32,8 @@
   .about-docs {
     @include flex;
     flex-direction: column;
+    &__item {
+      padding-bottom: $space-x2;
+    }
   }
 }

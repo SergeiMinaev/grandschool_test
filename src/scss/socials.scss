@@ -35,10 +35,22 @@
     width: 100%;
     justify-content: flex-start;
     &__item {
-      margin: 16px;
+      margin: $space-x2;
       margin-left: 0;
       &:last-child {
         margin-left: 0;
+      }
+    }
+  }
+}
+
+@media #{$mobile} {
+  .socials {
+    justify-content: center;
+    &__item {
+      margin: $space-x1;
+      &:last-child {
+        margin: $space-x1;
       }
     }
   }

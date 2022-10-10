@@ -8,33 +8,39 @@
     margin-top: 80px;
     height: 380px;
     background-color: $color-gray-pale-3;
-    border-radius: 16px;
+    border-radius: $rad-x2;
   }
   &__content {
     @include flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 32px 32px 32px;
+    padding: $space-x3;
+    padding-top: 0;
   }
   &__img {
-    border-radius: 16px;
-    margin-bottom: 16px;
+    border-radius: $rad-x2;
+    margin-bottom: $space-x2;
   }
   &__name {
-    margin-bottom: 16px;
+    margin-bottom: $space-x2;
   }
   &__email {
-    margin-bottom: 16px;
+    margin-bottom: $space-x2;
   }
   &__position {
     color: $color-gray-pale;
-    //margin-bottom: 64px;
   }
   &__contacts {
     @include flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+  &__phone-row {
+    @include flex;
+  }
+  &__phone-mod {
+    font-weight: 600;
   }
 }
 

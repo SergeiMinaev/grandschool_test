@@ -14,9 +14,14 @@
             <Link class='team-card__email' icon='mail'
               :url='`mailto:${item.email}`' :label='item.email'
             />
-            <Link class='team-card__phone' icon='phone'
-              :url='`tel:${item.phoneRaw}`' :label='item.phone'
-            />
+            <div class='team-card__phone-row'>
+              <Link class='team-card__phone' icon='phone'
+                :url='`tel:${item.phoneRaw}`' :label='item.phone'
+              />
+              <span class='team-card__phone-mod'>
+                &nbsp;доб.&nbsp;{{item.phoneMod}}
+              </span>
+            </div>
           </div>
         </div>
       </div>

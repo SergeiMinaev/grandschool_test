@@ -1,6 +1,6 @@
 .supported-by {
   &__title {
-    margin-bottom: 36px;
+    margin-bottom: $space-x3;
   }
   &__items {
     @include flex;
@@ -8,10 +8,19 @@
     align-items: flex-start;
   }
   &__item {
-    margin-bottom: 64px;
+    margin-bottom: $space-x4;
     &:last-child {
       margin-bottom: 0;
     }
-    width: 100%;
+    //width: 100%;
+  }
+}
+
+@media #{$mobile} {
+  .supported-by {
+    &__item {
+      max-width: 100%;
+      margin-bottom: $space-x3;
+    }
   }
 }

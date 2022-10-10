@@ -1,13 +1,32 @@
 .partners {
-  margin-bottom: 100px;
+  margin-bottom: $space-separator;
   &__head {
     @include flex;
     justify-content: space-between;
     align-items: baseline;
   }
   &__title {
+    margin-bottom: $space-x3;
   }
   &__carousel {
     height: 100px;
+  }
+  &__btn-desk {
+    display: block;
+  }
+  &__btn-mob {
+    display: none;
+  }
+}
+
+@media #{$mobile} {
+  .partners {
+    &__btn-desk {
+      display: none;
+    }
+    &__btn-mob {
+      display: block;
+      margin-top: $space-x2;
+    }
   }
 }

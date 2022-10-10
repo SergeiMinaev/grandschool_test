@@ -2,9 +2,11 @@
   display: grid;
   grid-template-areas: 'title title' 'descr docs';
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 64px;
+  grid-column-gap: $space-x4;
+  margin-bottom: $space-separator;
   &__title {
     grid-area: title;
+    margin-bottom: $space-x3;
   }
   &__descr {
     grid-area: descr;
@@ -17,9 +19,9 @@
     @include flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: $space-separator;
     & > div {
-      width: calc(50% - 60px);
+      width: calc(50% - $space-x5);
     }
   }
 }
@@ -33,6 +35,7 @@
 @media #{$laptop} {
   .about {
     grid-template-areas: 'title' 'descr' 'docs';
+    grid-template-columns: 1fr;
     &__docs-support {
       flex-direction: column;
       & > div {

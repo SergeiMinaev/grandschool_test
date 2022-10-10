@@ -1,5 +1,7 @@
 .coop {
+  margin-bottom: $space-separator;
   &__title {
+    margin-bottom: $space-x3;
   }
   &__cards {
     @include flex;

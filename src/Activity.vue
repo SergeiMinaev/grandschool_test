@@ -9,7 +9,7 @@
           ></div>
           <h3 v-html='item.label'></h3>
         </div>
-        <a :href='item.link' class='activity__btn btn btn-light'>
+        <a :href='item.link' target='_blank' class='activity__btn btn btn-light'>
           {{ label }}
         </a>
       </div>

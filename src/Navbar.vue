@@ -6,7 +6,7 @@
       <div class='nav__burger-line'></div>
     </div>
     <ul :class='`nav__list nav__list--${isVisible ? "vis":""}`'>
-      <div class='nav__close' @click='isVisible=false'>x</div>
+      <div class='nav__close' @click='isVisible=false'></div>
       <template v-for='route in $router.options.routes'>
         <li v-if='route && route.meta && route.name != "home"'
           v-bind:key='route.name'>

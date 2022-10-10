@@ -1,13 +1,19 @@
 .docs {
   &__title {
-    margin-bottom: 36px;
+    margin-bottom: $space-x3;
   }
   &__item {
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: $space-x2;
     text-decoration: none;
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+@media #{$mobile} {
+  .docs {
+    margin-bottom: $space-separator;
   }
 }

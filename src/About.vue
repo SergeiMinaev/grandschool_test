@@ -6,7 +6,9 @@
       <div class='about__docs about-docs'>
         <div class='about-docs__item' v-for='doc in docs'>
           <img :src='doc.thumb' />
-          <span class='text-btn'>{{ doc.label }}&nbsp;→</span>
+          <a :href='doc.thumb' target='_blank'>
+            <span class='text-btn'>{{ doc.label }}&nbsp;→</span>
+          </a>
         </div>
       </div>
     </div>

@@ -1,19 +1,26 @@
 .team {
+  margin-bottom: $space-separator;
+  &__title {
+    margin-bottom: $space-x3;
+  }
   &__items {
     @include flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: $space-x3;
   }
   &__card {
-    width: calc(25% - 25px);
+    width: calc(25% - $space-x2 - $space-x1);
+    max-width: calc(25% - $space-x2 - $space-x1);
+    overflow: hidden;
+    flex-shrink: 0;
   }
 }
 
 @media #{$laptop} {
   .team {
     &__card {
-      width: calc(50% - 25px);
+      width: calc(50% - $space-x2);
     }
   }
 }
@@ -21,7 +28,7 @@
 @media #{$mobile} {
   .team {
     &__card {
-      width: 100%;
+      min-width: 100%;
     }
   }
 }

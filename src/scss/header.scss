@@ -1,5 +1,5 @@
 .header {
-  margin-bottom: 86px;
+  margin-bottom: $space-separator;
   &__row-1 {
     display: grid;
     grid-template-areas: 'logo search btns';
@@ -57,7 +57,7 @@
 
 @media #{$mobile} {
   .header {
-    margin-bottom: 32px;
+    margin-bottom: $space-x3;
     &__row-1 {
       grid-template-areas: 'logo nav' 'search search' 'btns btns';
     }

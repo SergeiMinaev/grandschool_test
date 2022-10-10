@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     & li {
-      margin-right: 32px;
+      margin-right: $space-x3;
       &:last-child {
       }
     }
@@ -45,7 +45,7 @@
       top: 0; left: 0; bottom: 0; right: 0;
       z-index: 10;
       background-color: white;
-      padding: 32px;
+      padding: $space-x3;
       &--vis {
         display: flex;
       }
@@ -55,12 +55,17 @@
       }
     }
     &__close {
+      display: block;
       cursor: pointer;
       position: absolute;
       top: 25px;
       right: 25px;
-      font-size: 40px;
-      color: $color-gray-pale;
+      font-size: 32px;
+      color: $color-gray-pale-2;
+      @include mask-image('/static/icon/48/Close.svg');
+      background-color: $color-gray-pale;
+      width: 32px;
+      height: 32px;
     }
   }
 }
